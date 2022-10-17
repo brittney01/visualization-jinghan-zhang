@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Happiness Score in 2015</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/grids-responsive-min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Fuzzy+Bubbles:wght@400;700&family=Oswald:wght@500&family=Roboto+Condensed:wght@700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+
+    
+
+    
+
+</head>
+
+<body>
+    <div class="page">
+
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+                <h1>World Happiness Score in 2015</h1>
+                <p>The happiness scores and rankings use data from the Gallup World Poll. The scores are based on answers to the main life evaluation question asked in the poll. This question, known as the Cantril ladder, asks respondents to think of a ladder with the best possible life for them being a 10 and the worst possible life being a 0 and to rate their own current lives on that scale. </p>
+            </div>
+            <div class="pure-1-1">
+                <div id="vis1" class="vis-container"></div>
+        </div>
+        <div class="pure-u-1-1">
+            <div id="vis1" class="vis-container"></div>
+        </div>
+        </div>
+
+    <script type="text/javascript">
+        var specvis1 = "./visualization.vl-map1.json";
+
+        vegaembed('#vis1', specVis1,{ "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    </script>
+</body>
+</html>
